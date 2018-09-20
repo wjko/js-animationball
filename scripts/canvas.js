@@ -94,12 +94,12 @@ function draw() {
     // Add a mouse down event listener
     c.addEventListener("mousedown", doMouseDown, false);
 
-    ctx.strokeStyle = "blue";
+    ctx.strokeStyle = "white";
 
     // Draw the center point
     ctx.fillRect(centerX-1, centerY-1, 3, 3);
 
-    // Draw the big circle with blue color
+    // Draw the big circle with white color
     ctx.beginPath();
     ctx.arc(centerX, centerY, radius, 0*Math.PI, 2*Math.PI);
 
@@ -178,13 +178,13 @@ function draw() {
     ctx.fill();
 
     // Draw text at the bottom of the canvas
-    ctx.font = "30px Comic Sans MS";
-    ctx.fillStyle = 'red';
+    ctx.font = "24px Comic Sans MS";
+    ctx.fillStyle = 'green';
     ctx.textAlign = "center";
-    ctx.fillText("JavaScript 研習營", centerX, c.height - 10);
+    ctx.fillText("JavaScript 研習營 - Project 1", centerX, c.height - 10);
 
-    ctx.font = "10px Comic Sans MS";
-    ctx.fillStyle = 'blue';
+    ctx.font = "16px Comic Sans MS";
+    ctx.fillStyle = 'yellow';
     ctx.textAlign = "center";
     ctx.fillText("Click the bottom hemisphere to toggle sound.", 
                     centerX, c.height - 50);
